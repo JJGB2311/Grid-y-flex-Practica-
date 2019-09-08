@@ -1,0 +1,74 @@
+body {
+  background: lavender;
+  color: black;
+}
+.master {
+  width: 90%;
+  max-width: 100%;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 10px; /*separacion*/
+  grid-template-columns: 70% 28%;
+  grid-template-rows: repeat(3, auto);
+  text-align: justify;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header li {
+  float: right;
+}
+
+.header a {
+  display: block;
+  text-decoration: none;
+  margin: 5px auto;
+  padding: 20px 20px;
+}
+
+.header .logo {
+  float: left;
+  background: no-repeat;
+}
+
+.header a:hover {
+  background: rgb(48, 169, 218);
+}
+
+.section,
+div,
+.header,
+.aside,
+.foorer {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+.header {
+  background: rgb(127, 127, 173);
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: center;
+}
+.section {
+  background: rgb(28, 133, 124);
+}
+.aside {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: palegreen;
+}
+
+.foorer {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  background: aquamarine;
+  bottom: 0;
+}
